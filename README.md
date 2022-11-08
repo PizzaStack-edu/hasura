@@ -10,6 +10,12 @@ Application uses `yarn`, `docker` and `docker-compose`, so you need to install t
   yarn
 ```
 
+- Make sure docker is running:
+
+```bash
+  sudo systemctl start docker
+```
+
 - Run docker-compose:
 
 ```bash
