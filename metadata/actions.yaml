@@ -1,6 +1,15 @@
-actions: []
+actions:
+  - name: register
+    definition:
+      kind: synchronous
+      handler: http://172.17.0.1:8888/.netlify/functions/register
+    comment: Admin registration
 custom_types:
   enums: []
-  input_objects: []
-  objects: []
+  input_objects:
+    - name: AdminRegisterInput
+    - name: AdminRegistrationInput
+  objects:
+    - name: AdminRegisterOutput
+    - name: AdminRegistrationOutput
   scalars: []
