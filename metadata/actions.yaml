@@ -1,4 +1,11 @@
 actions:
+  - name: adminLogin
+    definition:
+      kind: ""
+      handler: http://172.17.0.1:8888/.netlify/functions/admin-login
+    permissions:
+      - role: guest
+    comment: Login admin
   - name: adminRegister
     definition:
       kind: synchronous
@@ -13,7 +20,9 @@ custom_types:
   input_objects:
     - name: AdminRegisterInput
     - name: AdminRegistrationInput
+    - name: AdminLoginInput
   objects:
     - name: AdminRegisterOutput
     - name: AdminRegistrationOutput
+    - name: AdminLoginOutput
   scalars: []
